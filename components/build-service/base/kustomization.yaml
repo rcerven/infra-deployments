@@ -1,6 +1,6 @@
 resources:
 - allow-argocd-to-manage.yaml
-- https://github.com/rcerven/build-service/config/default?ref=6ce445e61dc5ed483bf70eaeb56b6d7218916866
+- https://github.com/rcerven/build-service/config/default?ref=6f4251be41ae96d297ad04ed0c1f5665d92ee9d5
 - build-pipeline-selectors/build-pipeline-selector.yaml
 - monitoring.yaml
 - rbac
