@@ -1,6 +1,6 @@
 resources:
 - allow-argocd-to-manage.yaml
-- https://github.com/redhat-appstudio/build-service/config/default?ref=7069c7708a122ad24eabfe67b650e9065ebff942
+- https://github.com/rcerven/build-service/config/default?ref=e3230907b214b6f49c8569538fd811f665c99d70
 - build-pipeline-selectors/build-pipeline-selector.yaml
 - monitoring.yaml
 - rbac
@@ -15,8 +15,8 @@ namespace: build-service
 
 images:
 - name: quay.io/redhat-appstudio/build-service
-  newName: quay.io/redhat-appstudio/build-service
-  newTag: 7069c7708a122ad24eabfe67b650e9065ebff942
+  newName: quay.io/rcerven_rhtaptest/build-operator
+  newTag: latest
 
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
