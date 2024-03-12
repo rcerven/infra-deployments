@@ -9,7 +9,7 @@ namespace: build-service
 images:
 - name: quay.io/redhat-appstudio/build-service
   newName: quay.io/rcerven_rhtaptest/build-operator
-  newTag: test1
+  newTag: test2
 #  newName: quay.io/redhat-appstudio/build-service
 #  newTag: 29b09e5d8350f75c92d5796fbbf62647fe28610b
 
