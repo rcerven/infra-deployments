@@ -8,8 +8,8 @@ namespace: build-service
 
 images:
 - name: quay.io/konflux-ci/build-service
-  newName: quay.io/konflux-ci/build-service
-  newTag: a3200482f3df51ff1df2ef367bc45d83a7358caa
+  newName: quay.io/rcerven_rhtaptest/build-operator
+  newTag: latest
 
 commonAnnotations:
   argocd.argoproj.io/sync-options: SkipDryRunOnMissingResource=true
