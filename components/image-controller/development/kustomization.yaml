@@ -6,8 +6,10 @@ resources:
 
 images:
 - name: quay.io/konflux-ci/image-controller
-  newName: quay.io/konflux-ci/image-controller
-  newTag: 91ac5a1bc402d44a674b69251d0f2ac424e24e6e
+  newName: quay.io/rcerven_rhtaptest/image-operator
+  newTag: latest
+#  newName: quay.io/konflux-ci/image-controller
+#  newTag: 91ac5a1bc402d44a674b69251d0f2ac424e24e6e
 
 namespace: image-controller
 
