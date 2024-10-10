@@ -14,4 +14,8 @@ data:
     - name: docker-build-oci-ta
       bundle: quay.io/konflux-ci/tekton-catalog/pipeline-docker-build-oci-ta:0ea2f673d9099e431e25ea14dc270087bb4b434a
     - name: docker-build-multi-platform-oci-ta
+      additional-params:
+      - build-platforms
+      - wrong-param
+      - build-source-image
       bundle: quay.io/konflux-ci/tekton-catalog/pipeline-docker-build-multi-platform-oci-ta:0ea2f673d9099e431e25ea14dc270087bb4b434a
