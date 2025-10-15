@@ -2,7 +2,7 @@
 role: Agent
 resources:
   requests:
-    cpu: 512m
+    cpu: 10m
     memory: 4096Mi
   limits:
     cpu: 2000m
