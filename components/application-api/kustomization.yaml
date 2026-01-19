@@ -1,7 +1,7 @@
 resources:
 - allow-argocd-to-manage.yaml
 - argocd-permissions.yaml
-- https://github.com/konflux-ci/application-api/config/crd?ref=d24742e8b02624911fa4c67c9e7ea02e7c572e66
+- https://github.com/konflux-ci/application-api/config/crd?ref=555a927cf6d921497f3f5685b86c8b2f2da9d550
 #- https://github.com/rcerven/application-api/config/crd?ref=dd3a3a87851f6ae9427edcd7c7f8eb19b1a51691
 
 
