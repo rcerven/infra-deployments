@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ../base
 #- https://github.com/konflux-ci/image-controller/config/default?ref=a7573b4fd18e7d695f36d2650f5766afedd13769
-- https://github.com/rcerven/image-controller/config/default?ref=3c776152f3cf35ac779d45cc4b02fb275e09b92d
+- https://github.com/rcerven/image-controller/config/default?ref=bf3f01c21c4285218dc9bafec8a257f9402b031d
 
 images:
 - name: quay.io/konflux-ci/image-controller
