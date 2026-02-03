@@ -1,8 +1,8 @@
 resources:
 - allow-argocd-to-manage.yaml
 - argocd-permissions.yaml
-- https://github.com/konflux-ci/application-api/config/crd?ref=6f2d131cfcbed3c456608c4da2b89da1a266abf8
-#- https://github.com/rcerven/application-api/config/crd?ref=dd3a3a87851f6ae9427edcd7c7f8eb19b1a51691
+#- https://github.com/konflux-ci/application-api/config/crd?ref=6f2d131cfcbed3c456608c4da2b89da1a266abf8
+- https://github.com/rcerven/application-api/config/crd?ref=31f1b63c376aff7ee1cc05ce12a7369e6c51bf04
 
 
 apiVersion: kustomize.config.k8s.io/v1beta1
