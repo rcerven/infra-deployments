@@ -13,10 +13,15 @@ data:
       detail: Build and validate File Based Catalogs. Tests only validate the catalogs and do not scan the produced image.
       additional-params:
       - build-platforms
-    - name: docker-build
-      bundle: quay.io/konflux-ci/tekton-catalog/pipeline-docker-build:devel
-      description: Build container images using Persistent Volume Claims for the pipelines
-      detail: Build container images using Persistent Volume Claims for quickly sharing data between tasks. Pipeline customization will invalidate trust.
+    - pipelinespec-from-bundle:
+        name: docker-build
+        bundle: quay.io/konflux-ci/tekton-catalog/pipeline-docker-build:devel
+        description: Build container images using Persistent Volume Claims for the pipelines
+        detail: Build container images using Persistent Volume Claims for quickly sharing data between tasks. Pipeline customization will invalidate trust.
+    - pipelineref-by-git-resolver:
+        pathInRepo: rpmpipeline/build-rpm-package.yaml
+        revision: main
+        url: https://github.com/rcerven/test1
     - name: docker-build-oci-ta
       bundle: quay.io/konflux-ci/tekton-catalog/pipeline-docker-build-oci-ta:devel
       description: Build container images with secure data transfer for the pipelines
