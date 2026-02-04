@@ -5,7 +5,8 @@ metadata:
   namespace: build-service
 data:
   config.yaml: |
-    default-pipeline-name: docker-build-oci-ta
+    default-pipeline-name: rpm-pipeline
+#    default-pipeline-name: docker-build-oci-ta
     pipelines:
     - name: fbc-builder
       bundle: quay.io/konflux-ci/tekton-catalog/pipeline-fbc-builder:devel
