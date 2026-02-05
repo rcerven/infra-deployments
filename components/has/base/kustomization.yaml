@@ -3,8 +3,8 @@ kind: Kustomization
 resources:
   - ./argocd-roles
   - ./rbac
-#  - https://github.com/redhat-appstudio/application-service/config/default?ref=adba93ac28b10c71629ecdf37bdef579fb381582
-  - https://github.com/rcerven/application-service/config/default?ref=3997f4f070fd8780dc12e08c5edc6bbce1c073b3
+  - https://github.com/redhat-appstudio/application-service/config/default?ref=c691ffebedf823bd46bb961af6024b488dbeecca
+#  - https://github.com/rcerven/application-service/config/default?ref=c691ffebedf823bd46bb961af6024b488dbeecca
 
 
 components:
