@@ -4,7 +4,7 @@ resources:
   - ./argocd-roles
   - ./rbac
 #  - https://github.com/redhat-appstudio/application-service/config/default?ref=adba93ac28b10c71629ecdf37bdef579fb381582
-  - https://github.com/rcerven/application-service/config/default?ref=cab96ca4e8c2f04b5c78973b1ef05c6d6c969b74
+  - https://github.com/rcerven/application-service/config/default?ref=3997f4f070fd8780dc12e08c5edc6bbce1c073b3
 
 
 components:
