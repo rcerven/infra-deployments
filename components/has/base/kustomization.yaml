@@ -3,30 +3,24 @@ kind: Kustomization
 resources:
   - ./argocd-roles
   - ./rbac
-#  - https://github.com/redhat-appstudio/application-service/config/default?ref=c691ffebedf823bd46bb961af6024b488dbeecca
+  #  - https://github.com/redhat-appstudio/application-service/config/default?ref=c691ffebedf823bd46bb961af6024b488dbeecca
   - https://github.com/rcerven/application-service/config/default?ref=2a85a471133e63fec60c31f1d9ce57de097e1e74
-
-
 components:
   - ../k-components/manager-resources
   - ../k-components/enable-profiling
-
 images:
   - name: quay.io/redhat-appstudio/application-service
-#    newName: quay.io/redhat-appstudio/application-service
-#    newTag: adba93ac28b10c71629ecdf37bdef579fb381582
+    #    newName: quay.io/redhat-appstudio/application-service
+    #    newTag: adba93ac28b10c71629ecdf37bdef579fb381582
     newName: quay.io/rcerven_rhtaptest/application-operator
     newTag: latest
-
 configMapGenerator:
   - literals:
-      - GITHUB_ORG=""
+      - GITHUB_ORG=rcerven-rhtap
     name: github-config
     behavior: replace
   - literals:
       - ENVIRONMENT="development"
     name: feature-flag-config
     behavior: replace
-
-
 namespace: application-service
