@@ -8,5 +8,5 @@ resources:
 - konflux-rbac/
 - integration/
 - kubearchive/
-- kueue/
+# - kueue/
 - build-resources/
