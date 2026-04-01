@@ -6,11 +6,9 @@ resources:
   - https://github.com/redhat-appstudio/application-service/config/default?ref=1336ddc41f94df2da57a8ad8da2613e789be4041
 #  - https://github.com/rcerven/application-service/config/default?ref=88efdf8c11f067fd84d0144220c7abbdb921a13d
 
-
 components:
   - ../k-components/manager-resources
   - ../k-components/enable-profiling
-
 images:
   - name: quay.io/redhat-appstudio/application-service
     newName: quay.io/redhat-appstudio/application-service
@@ -20,13 +18,11 @@ images:
 
 configMapGenerator:
   - literals:
-      - GITHUB_ORG=""
+      - GITHUB_ORG=rcerven-rhtap
     name: github-config
     behavior: replace
   - literals:
       - ENVIRONMENT="development"
     name: feature-flag-config
     behavior: replace
-
-
 namespace: application-service
