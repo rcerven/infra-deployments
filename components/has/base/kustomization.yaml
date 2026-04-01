@@ -13,10 +13,10 @@ components:
 
 images:
   - name: quay.io/redhat-appstudio/application-service
-#    newName: quay.io/redhat-appstudio/application-service
-#    newTag: c7128eb4e63f16041fd54124065060e69efc95ea
-    newName: quay.io/rcerven_rhtaptest/application-operator
-    newTag: latest
+    newName: quay.io/redhat-appstudio/application-service
+    newTag: 1336ddc41f94df2da57a8ad8da2613e789be4041
+#    newName: quay.io/rcerven_rhtaptest/application-operator
+#    newTag: latest
 
 configMapGenerator:
   - literals:
