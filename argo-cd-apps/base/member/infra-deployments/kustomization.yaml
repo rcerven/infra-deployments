@@ -20,7 +20,7 @@ resources:
   - project-controller
   - mintmaker
   - monitoring-cardinality
-  - monitoring-registry
+#  - monitoring-registry
   - nvme-storage-configurator
   - tracing-workload-otel-collector
   - tempo
