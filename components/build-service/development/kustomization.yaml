@@ -3,7 +3,7 @@ kind: Kustomization
 resources:
 - ../base
 #- https://github.com/konflux-ci/build-service/config/default?ref=c56745ae225489d5431fb91260b1a44e2cf83876
-- https://github.com/rcerven/build-service/config/default?ref=e4f72ce650f41eeecb9507dce7ae43cbd88312ef
+- https://github.com/rcerven/build-service/config/default?ref=c6cb196770de07e76df7023cf2f1953005247478
 
 namespace: build-service
 
