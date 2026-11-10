@@ -2,8 +2,8 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - ../base
-#- https://github.com/konflux-ci/build-service/config/default?ref=c56745ae225489d5431fb91260b1a44e2cf83876
-- https://github.com/rcerven/build-service/config/default?ref=042d7f6e0e3414cd7e9d2f9d813754137618c2b6
+- https://github.com/konflux-ci/build-service/config/default?ref=977a9a4ae4926b13d65006224908f17427982ac2
+#- https://github.com/rcerven/build-service/config/default?ref=042d7f6e0e3414cd7e9d2f9d813754137618c2b6
 
 namespace: build-service
 
